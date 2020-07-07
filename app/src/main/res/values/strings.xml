@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">GithubUserApp</string>
+
+    <string name="k">K</string>
+    <string name="m">M</string>
+    <string name="b">B</string>
+    <string name="p">P</string>
+    <string name="github_user_lists">Github\'s Users</string>
+    <string name="repo">Repository</string>
+    <string name="followings">Followings</string>
+    <string name="followers">Followers</string>
+    <string name="title_detail_user">%1$s Github</string>
+
+    <string-array name="data_username">
+        <item>Bang Susanto</item>
+        <item>Boros Sumarno</item>
+        <item>Kuseno Sumarni</item>
+        <item>Fubuki Hondoko</item>
+        <item>Garou Handoko</item>
+        <item>Genos Takayama</item>
+        <item>King Supriyono</item>
+        <item>Orochi Alexander</item>
+        <item>Saitama Nugroho</item>
+        <item>Tatsumaki Priyono</item>
+    </string-array>
+
+    <array name="data_avatar">
+        <item>@drawable/bang</item>
+        <item>@drawable/boros</item>
+        <item>@drawable/doctor_kuseno</item>
+        <item>@drawable/fubuki</item>
+        <item>@drawable/garou</item>
+        <item>@drawable/genos</item>
+        <item>@drawable/king</item>
+        <item>@drawable/orochi</item>
+        <item>@drawable/saitama</item>
+        <item>@drawable/tatsumaki</item>
+    </array>
+
+    <string-array name="data_company">
+        <item>ICBC</item>
+        <item>CCB (China Construction Bank)</item>
+        <item>Apple</item>
+        <item>Microsoft</item>
+        <item>Amazon</item>
+        <item>Alibaba</item>
+        <item>Intel</item>
+        <item>Facebook</item>
+        <item>IBM</item>
+        <item>Oracle</item>
+        <item>Sony</item>
+        <item>Softbank</item>
+        <item>Cisco Systems</item>
+        <item>Coca-Cola</item>
+        <item>Twitter</item>
+    </string-array>
+
+    <string-array name="data_location">
+        <item>London, UK</item>
+        <item>Washington DC, USA</item>
+        <item>Massachusetts, US</item>
+        <item>New York, US</item>
+        <item>Chicago, US</item>
+        <item>Jakarta, Indonesia</item>
+        <item>Beijing, China</item>
+        <item>Tokyo, Japan</item>
+        <item>Berlin, Germany</item>
+        <item>Osaka, Japan</item>
+    </string-array>
+
+    <string-array name="data_repository">
+        <item>A Repository</item>
+        <item>B Repository</item>
+        <item>C Repository</item>
+        <item>D Repository</item>
+        <item>E Repository</item>
+        <item>F Repository</item>
+        <item>G Repository</item>
+        <item>H Repository</item>
+        <item>I Repository</item>
+        <item>J Repository</item>
+        <item>K Repository</item>
+        <item>L Repository</item>
+        <item>M Repository</item>
+        <item>N Repository</item>
+        <item>O Repository</item>
+        <item>P Repository</item>
+        <item>Q Repository</item>
+        <item>R Repository</item>
+        <item>S Repository</item>
+        <item>T Repository</item>
+        <item>U Repository</item>
+        <item>V Repository</item>
+        <item>W Repository</item>
+        <item>X Repository</item>
+        <item>Y Repository</item>
+        <item>Z Repository</item>
+    </string-array>
+</resources>

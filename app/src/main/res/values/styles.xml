@@ -1,0 +1,66 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/black_100</item>
+        <item name="android:statusBarColor">@color/black_100</item>
+
+    </style>
+
+    <style name="BaseButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/bg_coba</item>
+    </style>
+
+    <style name="MyToolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="titleTextColor">@color/white_100</item>
+        <item name="android:fontFamily">@font/publicsans_bolditalic</item>
+    </style>
+
+    <style name="BaseText" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">@color/white_100</item>
+    </style>
+
+    <style name="BaseText.TitleBold">
+        <item name="fontFamily">@font/publicsans_bold</item>
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+
+    <style name="BaseText.Title">
+        <item name="fontFamily">@font/publicsans_regular</item>
+        <item name="android:textSize">@dimen/text_title</item>
+    </style>
+
+    <style name="BaseText.SubTitleBold">
+        <item name="fontFamily">@font/publicsans_bold</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+    </style>
+
+    <style name="BaseText.SubTitle">
+        <item name="fontFamily">@font/publicsans_regular</item>
+        <item name="android:textSize">@dimen/text_subtitle</item>
+    </style>
+
+    <style name="BaseText.RegularBold">
+        <item name="fontFamily">@font/publicsans_bold</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+
+    <style name="BaseText.Regular">
+        <item name="fontFamily">@font/publicsans_regular</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+
+    <style name="BaseText.RegularSemiBold">
+        <item name="fontFamily">@font/publicsans_semibold</item>
+        <item name="android:textSize">@dimen/text_caption</item>
+    </style>
+
+    <style name="lineSeparator1dp">
+        <item name="android:background">@color/white_50</item>
+    </style>
+
+</resources>

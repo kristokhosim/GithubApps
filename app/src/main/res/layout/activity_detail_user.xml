@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailUserActivity">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/layout_basic_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:civ_border_color="@color/white_100"
+                app:civ_border_width="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription"
+                tools:src="@tools:sample/avatars" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="right"
+                app:constraint_referenced_ids="image_avatar" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/image_avatar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/barrier"
+                app:layout_constraintTop_toTopOf="@+id/image_avatar">
+
+                <TextView
+                    android:id="@+id/text_repository_count"
+                    style="@style/BaseText.TitleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_size_8dp"
+                    android:includeFontPadding="false"
+                    app:layout_constraintEnd_toEndOf="@+id/text_repository"
+                    app:layout_constraintStart_toStartOf="@+id/text_repository"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1.2k" />
+
+                <TextView
+                    android:id="@+id/text_repository"
+                    style="@style/BaseText.Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_2dp"
+                    android:gravity="center"
+                    android:text="@string/repo"
+                    app:layout_constraintEnd_toStartOf="@+id/text_following"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_repository_count" />
+
+                <TextView
+                    android:id="@+id/text_following_count"
+                    style="@style/BaseText.TitleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_size_8dp"
+                    android:includeFontPadding="false"
+                    app:layout_constraintEnd_toEndOf="@+id/text_following"
+                    app:layout_constraintStart_toStartOf="@+id/text_following"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="1.2k" />
+
+                <TextView
+                    android:id="@+id/text_following"
+                    style="@style/BaseText.Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_2dp"
+                    android:gravity="center"
+                    android:text="@string/followings"
+                    app:layout_constraintEnd_toStartOf="@+id/text_followers"
+                    app:layout_constraintStart_toEndOf="@+id/text_repository"
+                    app:layout_constraintTop_toBottomOf="@+id/text_following_count" />
+
+                <TextView
+                    android:id="@+id/text_followers_count"
+                    style="@style/BaseText.TitleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_size_8dp"
+                    android:includeFontPadding="false"
+                    app:layout_constraintEnd_toEndOf="@+id/text_followers"
+                    app:layout_constraintStart_toStartOf="@+id/text_followers"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="56k" />
+
+                <TextView
+                    android:id="@+id/text_followers"
+                    style="@style/BaseText.Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_size_2dp"
+                    android:gravity="center"
+                    android:text="@string/followers"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/text_following"
+                    app:layout_constraintTop_toBottomOf="@+id/text_followers_count" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/text_name"
+                style="@style/BaseText.TitleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_avatar"
+                tools:text="John Kennedy" />
+
+            <TextView
+                android:id="@+id/text_username"
+                style="@style/BaseText.SubTitleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_name"
+                tools:text="John@" />
+
+            <TextView
+                android:id="@+id/text_company"
+                style="@style/BaseText.SubTitleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_4dp"
+                android:drawableStart="@drawable/ic_company"
+                android:drawablePadding="@dimen/margin_size_4dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_username"
+                tools:text="Google.Inc" />
+
+            <TextView
+                android:id="@+id/text_location"
+                style="@style/BaseText.SubTitleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_4dp"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="@dimen/margin_size_4dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_company"
+                tools:text="London, UK" />
+
+            <TextView
+                android:id="@+id/repo"
+                style="@style/BaseText.TitleBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size_24dp"
+                android:text="@string/repo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_location" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRepository"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/repo"
+                tools:listitem="@layout/item_repository" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

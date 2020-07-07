@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_size_16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageAvatar"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:civ_border_color="@color/white_100"
+        app:civ_border_width="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/text_user_name"
+        style="@style/BaseText.TitleBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size_16dp"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:layout_marginEnd="@dimen/margin_size_16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+        app:layout_constraintTop_toTopOf="@+id/imageAvatar"
+        tools:text="Paul Ahmad Kah" />
+
+    <TextView
+        android:id="@+id/text_total_repositories"
+        style="@style/BaseText.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size_16dp"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:drawableStart="@drawable/ic_repository"
+        android:drawablePadding="@dimen/margin_size_4dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/imageAvatar"
+        app:layout_constraintTop_toBottomOf="@+id/text_user_name"
+        tools:text="12K" />
+
+    <TextView
+        android:id="@+id/text_total_followers"
+        style="@style/BaseText.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size_16dp"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:drawableStart="@drawable/ic_followers"
+        android:drawablePadding="@dimen/margin_size_4dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/text_total_repositories"
+        app:layout_constraintTop_toBottomOf="@+id/text_user_name"
+        tools:text="642" />
+
+    <TextView
+        android:id="@+id/text_total_following"
+        style="@style/BaseText.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size_16dp"
+        android:layout_marginTop="@dimen/margin_size_8dp"
+        android:drawableStart="@drawable/ic_following"
+        android:drawablePadding="@dimen/margin_size_4dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toEndOf="@+id/text_total_followers"
+        app:layout_constraintTop_toBottomOf="@+id/text_user_name"
+        tools:text="496K" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
